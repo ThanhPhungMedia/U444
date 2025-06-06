@@ -52,3 +52,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+// ...existing code...
+const logo = document.getElementById('navbar-logo');
+const defaultLogo = './images/U444.svg';
+const scrolledLogo = './images/U444-white.svg'; // Đổi tên file theo logo trắng của bạn
+
+window.addEventListener('scroll', function () {
+  if (window.pageYOffset > scrollThreshold) {
+    navbar.classList.add('scrolled');
+    if (logo) logo.src = scrolledLogo;
+  } else {
+    navbar.classList.remove('scrolled');
+    if (logo) logo.src = defaultLogo;
+  }
+});
+// ...existing code...
