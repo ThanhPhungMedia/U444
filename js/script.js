@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // ...existing code...
 const logo = document.getElementById('navbar-logo');
 const defaultLogo = './images/U444.svg';
-const scrolledLogo = './images/U444-white.svg'; // Đổi tên file theo logo trắng của bạn
+const scrolledLogo = './images/U444-black.svg'; // Đổi tên file theo logo trắng của bạn
 
 window.addEventListener('scroll', function () {
   if (window.pageYOffset > scrollThreshold) {
